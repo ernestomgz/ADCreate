@@ -1,0 +1,5 @@
+Name,Description,GroupScope
+alpha,Alpha Users,Global
+beta,Beta Users,Global
+Gamma Nested,Gamma Users nested within Beta,Global
+omega nested,Omega Users nested within Gamma,Global
