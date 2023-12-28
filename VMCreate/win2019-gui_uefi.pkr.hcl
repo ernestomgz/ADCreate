@@ -182,8 +182,40 @@ build {
   }
 
   provisioner "powershell" {
-    pause_before = "3m0s"
+    pause_before = "1m0s"
     scripts      = ["scripts/cleanup.ps1"]
+  }
+
+  provisioner "powershell" {
+    pause_before = "1m0s"
+    scripts      = ["../ADConfig/install_ad.ps1"]
+  }
+
+  provisioner "windows-restart" {
+    restart_timeout = "30m"
+  }
+
+  provisioner "powershell" {
+    pause_before = "1m0s"
+    scripts      = ["../ADConfig/configure_ad.ps1"]
+  }
+
+  provisioner "powershell" {
+    pause_before = "1m0s"
+    scripts      = ["../ADConfig/certificate.ps1"]
+  }
+
+  provisioner "windows-restart" {
+    restart_timeout = "30m"
+  }
+
+  provisioner "powershell" {
+    pause_before = "1m0s"
+    scripts      = ["../ADConfig/importusers.ps1"]
+  }
+
+  provisioner "windows-restart" {
+    restart_timeout = "30m"
   }
 
 }
