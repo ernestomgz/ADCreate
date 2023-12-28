@@ -4,7 +4,7 @@ ADBuilder is a project designed to streamline the configuration of Active Direct
 
 ## Prerequisites
 
-Before using ADBuilder, ensure you have Packer installed.
+Before using ADBuilder, ensure you have Packer and Virtualbox (or vmware) installed.
 
 
 ## Getting Started
@@ -13,7 +13,7 @@ Before using ADBuilder, ensure you have Packer installed.
 
 2. Execute the `./init.sh` command to build and configure your Windows Server VM.
 
-3. Add the generated .ovf file to VirtualBox. After the initialization is complete, the VM will be create at './VMCreate/output-gen/' .Add the generated .ovf file to your VirtualBox environment to create a fully configured Active Directory test environment.
+3. Add the generated .ovf file to VirtualBox. After the initialization is complete, the VM will be created at './VMCreate/output-gen/'. Add the generated .ovf file to your VirtualBox environment to create a fully configured Active Directory test environment.
 
 ## How it works
 
