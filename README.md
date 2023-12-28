@@ -11,7 +11,7 @@ Before using ADBuilder, ensure you have Packer installed.
 
 1. Clone this repository.
 
-2. Execute the `./init.sh` commands to build and configure your Windows Server VM.
+2. Execute the `./init.sh` command to build and configure your Windows Server VM.
 
 3. Add the generated .ovf file to VirtualBox. After the initialization is complete, the VM will be create at './VMCreate/output-gen/' .Add the generated .ovf file to your VirtualBox environment to create a fully configured Active Directory test environment.
 
