@@ -13,13 +13,13 @@ Commands to create an automated VM image:
 To create a Windows Server 2019 VM image using VMware Workstation use the following commands:
 
 ```sh
-packer build -only=vmware-iso win2019-gui_uefi.pkr.hcl #Windows Server 2019 w/ GUI using UEFI
+packer build -only=vmware-iso.gen win2019-gui_uefi.pkr.hcl #Windows Server 2019 w/ GUI using UEFI
 ```
 
 To create a Windows Server 2019 VM image using Oracle VM VirtualBox use the following commands:
 
 ```sh
-packer build -only=virtualbox-iso win2019-gui_uefi.pkr.hcl #Windows Server 2019 w/ GUI using UEFI
+packer build -only=virtualbox-iso.gen win2019-gui_uefi.pkr.hcl #Windows Server 2019 w/ GUI using UEFI
 ```
 
 *If you want fast deploy of vm use `-var '-fast=true'` . WARNING: The os wont be updated and hypervisor plugins wont be applied.
